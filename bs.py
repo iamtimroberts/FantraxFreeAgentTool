@@ -41,7 +41,7 @@ def filter_fhg(fhg_csv):
     shrunklist = []
     
     #shrink fhg stats to top 250
-    for row in range(1,250):
+    for row in range(1,251):
         shrunklist.append(fhg_stats[row])
         
     #remove the 1st, and 6th on fields

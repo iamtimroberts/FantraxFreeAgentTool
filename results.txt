@@ -60,3 +60,4 @@
 ['Fedor Tyutin', 'CBJ', 'D', 33, '13']
 ['Rostislav Klesla', 'PHX', 'D', 33, '14']
 ['Travis Hamonic', 'NYI', 'D', 31, '13']
+['Jiri Hudler', 'CGY', 'LW', 31, '13']
