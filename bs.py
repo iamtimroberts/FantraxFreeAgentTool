@@ -47,7 +47,7 @@ def filter_fhg(fhg_csv):
     #remove the 1st, and 6th on fields
     for i in range(len(shrunklist)):
         del shrunklist[i][0]
-        del shrunklist[i][5:]
+        del shrunklist[i][4:]
         
     #convert field 3 to int for sorting
     for i in range(len(shrunklist)):
