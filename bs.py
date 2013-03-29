@@ -66,9 +66,7 @@ def get_end_result(fantrax, fhg_stats):
     #sort list of matches by field 3
     end_result.sort(key=lambda x: x[3], reverse=True)
     
-    #print list of matches
-    for x in enum(end_result):
-        print x
+    return end_result
 
 if __name__ == '__main__':
     
@@ -86,6 +84,18 @@ if __name__ == '__main__':
      
      fantrax = get_free_agent(players_url)
      fhg_stats = filter_fhg(fhg_csv)
-     get_end_result(fantrax, fhg_stats)
-     
+
+     end_results = get_end_result(fantrax, fhg_stats)
+
+     #print list of matches
+     for x in enum(end_results):
+        print x
+
+     #print results to text file
+     f = open('./results.txt', 'w')
+     for item in end_results:
+         f.write("%s\n" % item)
+     f.close()
+
+     #operation is complete
      print "DONE"
